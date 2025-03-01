@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portada.css">
+    <title>Pasaporte de Invitación</title>
+
+</head>
+<body>
+    <!--Portada-->
+    <div class="container">
+        <div class="header">
+            <h1>Pasaporte</h1>
+            <p>Invitación de Boda</p>
+        </div>
+        <div class="stamp">
+            <h2>F & M</h2>
+            <p>05.12.25</p>
+        </div><br>
+        <h2>Fátima & Moisés</h2>
+        <div class="cta">
+            <p>Presiona el avión para escuchr nuestra canción</p>
+        </div>
+    </div>
+
+    <!--Carousel-->
+    <div class="container">
+        <div class="carousel">
+            <img src="images/image1.jpg" class="active">
+            <img src="images/image2.jpg" >
+            <img src="images/image3.jpg" >
+        </div>
+    </div>
+
+    <!--Padres-->
+    <div class="container">
+        <h3>Con la bendición de Dios y de nuestros Padres</h3>            
+        <h3>Padres de la Novia</h3>
+        <p>Francisca</p>
+        <p></p>
+
+        <h3>Padres del Novio</h3>
+        <p>Estela</p>
+        <p>Jose Luis</p>
+            
+        <h3>Padrinos</h3>
+        <p>Nombre</p>
+        <p>Nombre</p>
+    </div>
+
+    <!--Conteo-->
+    <div class="container">
+        <div class="carousel">
+
+            <img src="images/image1.jpg" class="active">
+
+        </div>
+        <div class="countdown" id="countdown"></div>
+    </div>
+
+    <!--Escalas-->
+    <div class="container">
+        <h1>Itinerario de escalas</h1>
+        <div class="scale-section">
+            <h3>Escala</h3>
+            <p><strong>Hora:</strong> 12:00 pm</p>
+            <p><strong>Ceremonia Religiosa
+            <p>Parroquia Ixtapa</p>
+            <button class="map-button">Ver mapa</button>
+        </div>
+        <div class="scale-section">
+            <h3>Destino</h3>
+            <p><strong>Hora:</strong> 6:00 pm</p>
+            <p><strong>Recepción
+            <p>Fontan Ixtapa</p>
+            <button class="map-button">Ver mapa</button>
+        </div>
+    </div>
+
+    <!--Vestimenta-->
+    <div class="container">
+        <div class="dress-code">
+            <h3>Dress Code</h3>
+            <p><strong>Mujeres:</strong> Colores de verano enteros o floreados (NO blanco, rojo, beige o similares)</p>
+            <p><strong>Hombres:</strong> Pantalón de vestir y camisa</p>
+            <img src="" alt="Dress Code">
+        </div>
+    </div>
+    
+    <!--Mesa de regalos-->
+    <div class="container">
+        <div class="gift-section">
+            <h3>Sugerencia de Regalos</h3>
+            <p>Si deseas darnos un presente, tenemos una lista de regalos.</p>
+            <div class="stamp">
+                <h2>Tomalo en cuenta</h2>
+            </div><br>
+            <img src="" alt="Mesa de Regalos">
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        const images = document.querySelectorAll('.carousel img');
+        
+        function showNextImage() {
+            images[index].classList.remove('active');
+            index = (index + 1) % images.length;
+            images[index].classList.add('active');
+        }
+        
+        setInterval(showNextImage, 3000);
+
+        function updateCountdown() {
+            const weddingDate = new Date("July 26, 2025 14:00:00").getTime();
+            const now = new Date().getTime();
+            const timeLeft = weddingDate - now;
+            
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            document.getElementById("countdown").innerHTML = `Faltan ${days} días, ${hours} horas, ${minutes} minutos y ${seconds} segundos`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
