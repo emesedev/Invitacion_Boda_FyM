@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/portada.css">
     <title>Pasaporte de Invitación</title>
 
@@ -12,7 +13,7 @@
     <div class="container">
         <div class="header">
             <h1>Pasaporte</h1>
-            <p>Invitación de Boda</p>
+            <h3>Invitacion de Boda</h3>
         </div>
         <div class="stamp">
             <h2>F & M</h2>
@@ -20,17 +21,13 @@
         </div><br>
         <h2>Fátima & Moisés</h2>
         <div class="cta">
-            <p>Presiona el avión para escuchr nuestra canción</p>
+            <p>Presiona el avión para escuchar nuestra canción</p>
         </div>
     </div>
 
     <!--Carousel-->
     <div class="container">
-        <div class="carousel">
-            <img src="images/image1.jpg" class="active">
-            <img src="images/image2.jpg" >
-            <img src="images/image3.jpg" >
-        </div>
+        <iframe src="html/carousel.html" frameborder="0" width="100%" height="450px"></iframe>
     </div>
 
     <!--Padres-->
@@ -128,5 +125,12 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>   
 </body>
 </html>
