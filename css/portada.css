@@ -13,7 +13,16 @@ body {
     padding: 20px;
     background: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #5a4a42;
+    border: 2px solid #fff;
+}
+
+.container2 {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #eab15d;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #eab15d;
 }
 
 .header {
@@ -32,15 +41,13 @@ body {
 
 .stamp {
     margin: 20px auto;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     background: url('') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 50%;
-    border: 5px solid #5a4a42;
 }
 
 .stamp h2,
@@ -147,4 +154,3 @@ body {
     width: 100px;
     margin: 10px;
 }
-
