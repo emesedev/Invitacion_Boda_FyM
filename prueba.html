@@ -3,71 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesa de Regalos</title>
+    <title>Pasaporte de Boda</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('fondo.jpg') center/cover no-repeat;
-            color: white;
             text-align: center;
-        }
-        .mesa-regalos {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 30px;
-            max-width: 600px;
-            margin: 50px auto;
-            border-radius: 10px;
-        }
-        .mesa-regalos h2 {
-            font-size: 14px;
-            font-weight: normal;
+            font-family: 'Georgia', serif;
+            background-color: #f8f5f0;
             margin: 0;
+            padding: 20px;
         }
-        .mesa-regalos h1 {
-            font-size: 18px;
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #c2a38a;
+        }
+        .header img {
+            width: 100%;
+        }
+        .title {
+            font-size: 24px;
             font-weight: bold;
-            margin: 5px 0;
+            color: #7a5a44;
         }
-        .mesa-regalos p {
+        .subtitle {
             font-size: 14px;
-            margin: 15px 0;
-        }
-        .logo {
-            margin: 20px 0;
-        }
-        .evento {
-            font-size: 16px;
+            color: #7a5a44;
             margin-bottom: 20px;
         }
-        .btn {
+        .badge {
             display: inline-block;
-            background: #c49a6c;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
+            padding: 15px;
+            border-radius: 50%;
+            background: #e7dfd8;
+            border: 3px solid #7a5a44;
+            font-size: 20px;
             font-weight: bold;
-            border-radius: 5px;
+            color: #7a5a44;
+            position: relative;
         }
-        .btn:hover {
-            background: #b1875a;
+        .badge span {
+            display: block;
+            background: #7a5a44;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .names {
+            font-size: 22px;
+            font-weight: bold;
+            color: #7a5a44;
+            margin-top: 20px;
+        }
+        .instruction {
+            font-size: 14px;
+            color: #7a5a44;
+            margin-top: 10px;
+        }
+        .icon {
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-
-    <div class="mesa-regalos">
-        <h2>El regalo es opcional</h2>
-        <h1>LA ASISTENCIA ES OBLIGATORIA</h1>
-        <hr>
-        <p>Su presencia es el mayor regalo, pero si desean hacernos un obsequio, todo lo que venga de su corazón es bien recibido, por eso ponemos a su disposición el enlace a nuestra mesa de regalos.</p>
-        <div class="logo">
-            <img src="liverpool-logo.png" alt="Liverpool" width="150">
+    <div class="container">
+        <div class="header">
+            <img src="images/flores.png" alt="Flores decorativas">
         </div>
-        <p class="evento">Evento: 51476724</p>
-        <a href="#" class="btn">🛒 Consultar Mesa</a>
+        <div class="title">PASAPORTE</div>
+        <div class="subtitle">INVITACIÓN DE BODA</div>
+        <div class="badge">
+            E & L
+            <span>26.07.25</span>
+        </div>
+        <div class="names">Emma & Lucas</div>
+        <div class="instruction">Presiona el avión ✈</div>
     </div>
-
 </body>
 </html>

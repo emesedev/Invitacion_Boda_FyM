@@ -5,7 +5,7 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f3f0eb;
-    color: #5a4a42;
+    color: #a47333;
 }
 
 .container {
@@ -23,14 +23,14 @@ body {
 }
 
 .titulo {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
-    color: #6b5845;
+    color: #654720;
 }
 
 .subtitulo {
     font-size: 23px;
-    color: #6b5845;
+    color: #a47333;
 }
 
 .stamp {
@@ -47,7 +47,7 @@ body {
 .stamp h2,
 .stamp p {
     margin: 0;
-    color: #5a4a42;
+    color: #a47333;
 }
 
 .stamp h2 {
@@ -58,39 +58,63 @@ body {
 .stamp p {
     font-size: 1.2em;
     font-weight: bold;
-    color: #8b6f5a;
+    color: #a47333;
 }
 
 .image {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    opacity: 50%;
-}
-
-.text {
+    width: 225px;
     position: absolute;
-    top: 40%;
+    opacity: 50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 5px;
 }
 
-.text2 {
+.image2 {
+    width: 225px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+}
+
+.image3 {
+    width: 285px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #a47333;
+    font-size: 40px;
+}
+
+.text2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #a47333;
     font-size: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     border-radius: 5px;
 }
+
+.text2 img {
+    width: 100px;
+}
+
+
+
+
+
 
 .text3 {
     position: absolute;
@@ -107,11 +131,11 @@ body {
 .contador {
     font-size: 35px;
     font-weight: bold;
-    color: #5a4735;
+    color: #654720;
 }
 .unidad {
     font-size: 10px;
-    color: #5a4735;
+    color: #a47333;
     margin: 10px;
     display: inline-block;
 }
@@ -138,20 +162,15 @@ body {
 }
 .icono {
     font-size: 40px;
-    color: #5a4735;
+    color: #a47333;
 }
-.titulo {
-    font-size: 40px;
-    font-style: italic;
-    color: #5a4735;
-    margin: 10px 0;
-}
+
 .detalle {
     font-size: 18px;
-    color: #5a4735;
+    color: #a47333;
 }
 .mapa-btn {
-    background-color: #5a4735;
+    background-color: #a47333;
     color: white;
     padding: 8px 16px;
     border-radius: 8px;
@@ -164,6 +183,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
+    color: #654720;
 }
 .icon {
     font-size: 30px;
@@ -203,31 +223,12 @@ body {
     margin-top: 20px;
 }
 
-.section {
-    width: 45%;
-}
-
-.section img {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.section h2 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.section p {
-    font-size: 14px;
-    margin: 5px 0;
-}
 
 .title2 {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #654720;
 }
 .text2 {
     font-size: 16px;
@@ -251,6 +252,7 @@ body {
     font-size: 14px;
     width: 80%;
     display: inline-block;
+    color: #654720;
 }
 
 .mesa-regalos {
@@ -284,4 +286,47 @@ body {
 
 .evento-mesa {
     font-size: 16px;
+}
+
+
+.blessing {
+    font-size: 20px;
+    color: #654720;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.image-container::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 30px;
+    background: url('https://i.imgur.com/your-image.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.names {
+    font-size: 16px;
+    margin-top: 20px;
 }
