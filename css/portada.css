@@ -70,7 +70,7 @@ body {
 
 .text {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -82,7 +82,7 @@ body {
 
 .text2 {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
