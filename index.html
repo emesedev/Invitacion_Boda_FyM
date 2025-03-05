@@ -12,34 +12,33 @@
 <body>
     <!--Portada-->
     <div class="container">
-        <div class="header">
-            <h1>Pasaporte</h1>
-            <h3>Invitacion de Boda</h3>
-        </div>
+        <br><br><br><div class="titulo">PASAPORTE</div>
+        <div class="subtitulo">INVITACIÓN A NUESTRA BODA</div><br><br><br>
+
         <div class="stamp">
-            <img src="images/travel_10913583.png" width="100%" height="100%" class="world"><br>
-            <h2>F & M</h2>
-            <p>05.12.25</p>
+            <img src="images/world.gif" alt="The  World is Yours" class="image">
+            <div class="text">F & M</div>
+            <div class="text2">
+                <img src="images/plane.png" width="45%" alt="Haz clic para reproducir" style="cursor: pointer;" onclick="reproducirAudio()">
+                <audio id="audio" src="html/Congratulations.mp3"></audio>
+            </div>
         </div><br>
         <h2>Fátima & Moisés</h2>
+        <h3>05.12.2025</h3>
         <div class="cta">
             <p>Presiona el avión para escuchar nuestra canción</p>
-            <img src="images/plane.png" alt="">
         </div>
-
-        <audio src="html/Congratulations.mp3" controls autoplay></audio>
     </div>
 
     <!--Carousel-->
     <div class="container2" data-aos="fade-up">
-        <div class="row">
-            Nuestro próximo viaje está por comenzar y deseamos compartir el inicio de esta aventura con ustedes
-        </div><br>
-        <iframe src="html/carousel.html" frameborder="0" width="100%" height="450px"></iframe>
+        <img src="images/f1.jpg" width="100%" alt="">
+        <div class="text3">¡ Nuestro próximo viaje está por comenzar y deseamos compartir el inicio de esta aventura con ustedes !</div>
     </div>
 
     <!--Padres-->
     <div class="container" data-aos="fade up">
+        <br><br>
         <img src="images/f11.png" width="20%" height="20%" alt="">
         <h3>Con la bendición de Dios y de nuestros Padres</h3>            
         <h3>Padres de la Novia</h3>
@@ -49,100 +48,134 @@
         <p>Estela León Castañeda</p>
         <p>José Luis Santos Rangel</p>
             
-        <img src="images/f10.jpeg" width="100%" height="100%" alt="">
+        <img src="images/f8.jpeg" width="100%" height="100%" alt="">
     </div>
 
     <!--Conteo-->
     <div class="container" data-aos="fade up">
-        <p>Prepárate y acompañanos a celebrar</p>
-        <img src="images/pase.png" width="100%">
+        <br><br>
+        <h2>Prepárate y acompañanos a celebrar</h2><br>
+        <img src="images/pase.png" width="100%"><br><br>
 
         <p>Cuenta regresiva para el embarque</p>
-        <div class="countdown" id="countdown"></div>
+        <div id="contador" class="contador">00 : 00 : 00 : 00</div>
+        <div>
+            <span class="unidad">DÍAS</span>
+            <span class="unidad">HORAS</span>
+            <span class="unidad">MINUTOS</span>
+            <span class="unidad">SEGUNDOS</span>
+        </div><br><br>
     </div>
 
     <!--Escalas-->
     <div class="container" data-aos="fade up">
         <h1>Itinerario de escalas</h1>
-        <div class="scale-section">
-            <h3>Escala</h3>
-            <p><strong>Hora:</strong> 13:00 pm</p>
-            <p><strong>Ceremonia Religiosa
-            <p>Parroquia Santa Cruz y la Virgen del Rosario</p><br>
-            <a class="map-button" href="https://maps.app.goo.gl/kFVGEZ4DQgF5gCH7A" target="_blank">Ver mapa</a>
+        <div class="evento">
+            <div class="icono"></div>
+            <div class="titulo">Escala</div>
+            <div class="detalle">
+                <p><strong>Hora: 1:00 pm</strong></p>
+                <p><strong>Ceremonia Religiosa</strong></p>
+                <p>“Parroquia de la Santa Cruz y la Virgen del Rosario”</p>
+                <p>Calle Paseo de los Pelicanos 8-3 Las Garzas, 40880 Ixtapa Zihuatanejo, Gro.</p>
+                <a href="https://maps.app.goo.gl/WMm1gSEpt9dAxR2E8" target="_blank" class="mapa-btn">
+                    Ver mapa
+                </a>
+            </div>
         </div>
-        <div class="scale-section">
-            <h3>Destino</h3>
-            <p><strong>Hora:</strong> 6:00 pm</p>
-            <p><strong>Recepción
-            <p>Hotel Fontan Ixtapa</p><br>
-            <a class="map-button" href="https://maps.app.goo.gl/rto9AaUGsmW7Gayk9" target="_blank">Ver mapa</a>
+
+        <div class="evento" data-aos="fade up">
+            <div class="icono"></div>
+            <div class="titulo">Destino</div>
+            <div class="detalle">
+                <p><strong>Hora: 6:00 pm</strong></p>
+                <p><strong>Recepción</strong></p>
+                <p>“Hotel Fontán Ixtapa”</p>
+                <p>Blvd. Paseo Ixtapa S/N, Fontán, 40880 Ixtapa Zihuatanejo, Gro.</p>
+                <a href="https://maps.app.goo.gl/uYucPyPCwUo9tYMw6" target="_blank" class="mapa-btn">Ver mapa</a>
+            </div>
         </div>
     </div>
 
     <!--Vestimenta-->
     <div class="container" data-aos="fade up">
+        <br><br>
+        <div class="icon"></div>
+        <div class="title">DRESS CODE</div>
+        
         <div class="dress-code">
-            <h3>Dress Code</h3>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <p><strong>Mujeres:</strong> Colores de verano enteros o floreados (NO blanco, rojo, beige o similares)</p>
-    
-                </div>
-    
-                <div class="col-md-6">
-                <p><strong>Hombres:</strong> Pantalón de vestir y camisa</p>
-                    
-                </div>
+            <div class="section">
+                <h2>MUJERES</h2>
+                <p>Vestido</p>
+                <p>Colores de verano entero o floreado (NO colores blancos,beige, rojo o similares)</p>
             </div>
-
-            
-            <img src="" alt="Dress Code">
+            <div class="section">
+                <h2>HOMBRES</h2>
+                <p>Formal</p>
+                <p>Pantalon de vestir & camisa</p>
+            </div>
         </div>
+            <img src="images/dreescode.jpg" width="200px" alt="">
+        <br><br>
     </div>
     
     <!--Mesa de regalos-->
-    <div class="container">
-        <div class="gift-section">
-            <h3>Sugerencia de Regalos</h3>
-            <p>Si deseas darnos un presente, tenemos una lista de regalos.</p>
-            <div class="stamp">
-                <h2>Tomalo en cuenta</h2>
-            </div><br>
-            <img src="" alt="Mesa de Regalos">
+    <div class="container" data-aos="fade up">
+        <br><br>
+        <div class="icon"></div>
+        <div class="title2">SUGERENCIA DE REGALOS</div>
+        <div >Si deseas darnos un presente, tenemos una lista de regalos</div><br><br>
+        
+        <div style="margin-bottom: 20px;">
+            <img src="images/liverpool.png" alt="Liverpool" width="170px">
+            <h2 class="evento-mesa">Evento: 51476724</h2>
+            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51633199" target="_blank" class="mapa-btn">Consultar Mesa</a>
+        </div><br><br>
+
+        <div>
+            <center> <img src="images/amazon.png" alt="Amazon" width="120px"></center>
+            <a href="https://www.amazon.com.mx/wedding/registry/12OW1IO1117A9" target="_blank" class="mapa-btn">Consultar Mesa</a><br><br>
+        </div><br><br>
+
+        <div class="footer-text">
+            Cada invitado ha sido considerado con cariño, por lo que cada invitación es personal y válida únicamente para el número de pases asignado. <br>
+            Agradecemos su comprensión y el respeto a esta indicación.
         </div>
     </div>
 
+    <div class="container2" data-aos="fade-up">
+        <iframe src="html/carousel.html" frameborder="0" width="100%" height="450px"></iframe>
+    </div>
+
     <script>
-        let index = 0;
-        const images = document.querySelectorAll('.carousel img');
-        
-        function showNextImage() {
-            images[index].classList.remove('active');
-            index = (index + 1) % images.length;
-            images[index].classList.add('active');
-        }
-        
-        setInterval(showNextImage, 3000);
+        function actualizarContador() {
+            const fechaObjetivo = new Date("2025-12-05T00:00:00").getTime(); // Cambia la fecha aquí
+            const ahora = new Date().getTime();
+            const diferencia = fechaObjetivo - ahora;
 
-        function updateCountdown() {
-            const weddingDate = new Date("July 26, 2025 14:00:00").getTime();
-            const now = new Date().getTime();
-            const timeLeft = weddingDate - now;
-            
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-            
-            document.getElementById("countdown").innerHTML = `Faltan ${days} días, ${hours} horas, ${minutes} minutos y ${seconds} segundos`;
+            if (diferencia < 0) {
+                document.getElementById("contador").innerHTML = "00 : 00 : 00 : 00";
+                return;
+            }
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            document.getElementById("contador").innerHTML = 
+                (dias < 10 ? "0" : "") + dias + " : " +
+                (horas < 10 ? "0" : "") + horas + " : " +
+                (minutos < 10 ? "0" : "") + minutos + " : " +
+                (segundos < 10 ? "0" : "") + segundos;
         }
 
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+        setInterval(actualizarContador, 1000);
+        actualizarContador();
     </script>
 
+
+    <script src="js/functions.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
