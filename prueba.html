@@ -1,90 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasaporte de Boda</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: 'Georgia', serif;
-            background-color: #f8f5f0;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid #c2a38a;
-        }
-        .header img {
-            width: 100%;
-        }
-        .title {
-            font-size: 24px;
-            font-weight: bold;
-            color: #7a5a44;
-        }
-        .subtitle {
-            font-size: 14px;
-            color: #7a5a44;
-            margin-bottom: 20px;
-        }
-        .badge {
-            display: inline-block;
-            padding: 15px;
-            border-radius: 50%;
-            background: #e7dfd8;
-            border: 3px solid #7a5a44;
-            font-size: 20px;
-            font-weight: bold;
-            color: #7a5a44;
-            position: relative;
-        }
-        .badge span {
-            display: block;
-            background: #7a5a44;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 10px;
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .names {
-            font-size: 22px;
-            font-weight: bold;
-            color: #7a5a44;
-            margin-top: 20px;
-        }
-        .instruction {
-            font-size: 14px;
-            color: #7a5a44;
-            margin-top: 10px;
-        }
-        .icon {
-            font-size: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Superposición de Imágenes</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="images/flores.png" alt="Flores decorativas">
-        </div>
-        <div class="title">PASAPORTE</div>
-        <div class="subtitle">INVITACIÓN DE BODA</div>
-        <div class="badge">
-            E & L
-            <span>26.07.25</span>
-        </div>
-        <div class="names">Emma & Lucas</div>
-        <div class="instruction">Presiona el avión ✈</div>
-    </div>
+    <style>
+        .contenedor-imagen {
+  position: relative;
+  width: 300px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+}
+
+.imagen-base {
+  width: 100%;
+  display: block;
+}
+
+.imagen-superpuesta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.7; /* Ajusta la transparencia si lo deseas */
+  pointer-events: none; /* Evita que la imagen superpuesta interfiera con eventos del mouse */
+}
+    </style>
+  <div class="contenedor-imagen">
+    <img src="images/bride2.jpg" alt="Imagen Base" class="imagen-base">
+    <img src="images/flores.png" alt="Imagen Superpuesta" class="imagen-superpuesta">
+  </div>
 </body>
 </html>

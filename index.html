@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/portada.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/padres.css">
+    <link rel="stylesheet" href="css/boarding.css">
+    <link rel="stylesheet" href="css/escalas.css">
+    <link rel="stylesheet" href="css/vestimenta.css">
+    <link rel="stylesheet" href="css/mesa.css">
     <title>Pasaporte de Invitación</title>
 
 </head>
@@ -19,14 +25,14 @@
             <img src="images/world.gif" alt="" class="image">
             <img src="images/contorno.png" alt="" class="image2">
             <img src="images/contorno2.png" alt="" class="image3">
-            <div class="text">✧ F & M ✧</div>
-            <div class="text2">
+            <div class="central">✧ F & M ✧</div>
+            <div class="plane">
                 <img src="images/plane.png" alt="Haz clic para reproducir" style="cursor: pointer;" onclick="reproducirAudio()">
                 <audio id="audio" src="html/Congratulations.mp3"></audio>
             </div>
         </div><br><br><br>
         <h1>FÁTIMA & MOISÉS</h1>
-        <div class="">
+        <div class="texto">
             <p style="text-transform: uppercase;">Presiona el avión para escuchar nuestra canción</p>
         </div>
         <div class="icon"><img src="images/carta.png" width="10%" alt=""></div><br>
@@ -35,40 +41,50 @@
     <!--Carousel-->
     <div class="container2" data-aos="fade-up">
         <img src="images/f1.jpg" width="100%" data-aos="fade-up">
-        <div class="text3" data-aos="fade-up">¡ Nuestro próximo viaje está por comenzar y deseamos compartir el inicio de esta aventura con ustedes !</div>
+        <div class="textoImagen" data-aos="fade-up">¡ Nuestro próximo viaje está por comenzar y deseamos compartir el inicio de esta aventura con ustedes !</div>
     </div>
 
     <!--Padres-->
     <div class="container" data-aos="fade up">
         <br><br>
-        <div class="blessing" data-aos="fade-up">CON LA BENDICIÓN DE DIOS Y DE NUESTROS PADRES</div>
-        <div class="title" data-aos="fade-up">PADRES DE LA NOVIA</div>
+        <div class="subtitulo2" data-aos="fade-up">CON LA BENDICIÓN DE DIOS Y DE NUESTROS PADRES</div><br>
+        <div class="texto" data-aos="fade-up">PADRES DE LA NOVIA</div>
         <div class="image-container" data-aos="fade-up">
-            <img src="images/bride2.jpg" alt="Icono de padres" data-aos="fade-up">
+            <img src="images/bride2.jpg" alt="Imagen Base" class="imagen-base">
+            <img src="images/flores.png" alt="Imagen Superpuesta" class="imagen-superpuesta">
         </div>
         <div class="names" data-aos="fade-up">
             <p>Francisca Rangel Vázquez</p>
         </div>
 
-        <div class="title" data-aos="fade-up">PADRES DEL NOVIO</div>
+        <div class="texto" data-aos="fade-up">PADRES DEL NOVIO</div>
         <div class="image-container" data-aos="fade-up">
-            <img src="images/groom2.jpg" alt="Icono de padres" data-aos="fade-up">
+            <img src="images/groom2.jpg" alt="Imagen Base" class="imagen-base">
+            <img src="images/flores.png" alt="Imagen Superpuesta" class="imagen-superpuesta">
         </div>
         <div class="names" data-aos="fade-up">
-            <p>Estela León Castaeda</p>
+            <p>Estela León Castañeda</p>
             <p>José Luis Santos Rangel</p>
-        </div>
+        </div><br>
 
+        <div class="texto">
+            <p style="text-transform: uppercase;">¡ Estamos listos para compartir con ustedes !</p>
+        </div><br>
+
+    </div>
+
+     <!--Carousel-->
+     <div class="container2" data-aos="fade-up">
         <img src="images/f8.jpeg" width="100%" data-aos="fade-up">
     </div>
 
     <!--Conteo-->
     <div class="container" data-aos="fade up">
         <br><br>
-        <h2 style="color: #654720;" data-aos="fade-up">Prepárate y acompañanos a celebrar</h2><br>
-        <img src="images/pase.png" width="80%" data-aos="fade-up"><br><br>
+        <h2 class="subtitulo" data-aos="fade-up">Prepárate y acompañanos a celebrar</h2><br>
+        <img src="images/pase.png" width="90%" data-aos="fade-up"><br><br>
 
-        <p data-aos="fade-up">Cuenta regresiva para el abordaje</p>
+        <p class="texto" data-aos="fade-up">Cuenta regresiva para el abordaje</p>
         <div id="contador" class="contador" data-aos="fade-up">00 : 00 : 00 : 00</div>
         <div>
             <span class="unidad" data-aos="fade-up">DÍAS</span>
@@ -79,16 +95,15 @@
     </div>
 
     <!--Escalas-->
-    <div class="container" data-aos="fade up">
-        <h1 data-aos="fade-up">Itinerario de escalas</h1>
+    <div class="container" data-aos="fade up"><br>
+        <h1 class="subtitulo" data-aos="fade-up">Itinerario de escalas</h1>
         <div class="evento" data-aos="fade-up">
-            <div class="icono"><img src="images/ubicacion.png" width="10%" data-aos="fade-up"></div>
-            <div class="titulo" data-aos="fade-up">Escala</div>
+            <div class="icon"><img src="images/ubicacion.png" width=5%" data-aos="fade-up"></div>
+            <div class="subtitulo" data-aos="fade-up"><strong>Escala</strong></div>
             <div class="detalle" data-aos="fade-up">
-                <p data-aos="fade-up"><strong>Hora: 1:00 pm</strong></p>
-                <p data-aos="fade-up"><strong>Ceremonia Religiosa</strong></p>
+                <p data-aos="fade-up">Hora: 1:00 pm</p>
+                <p data-aos="fade-up">Ceremonia Religiosa</p>
                 <p data-aos="fade-up">“Parroquia de la Santa Cruz y la Virgen del Rosario”</p>
-                <p data-aos="fade-up">Calle Paseo de los Pelicanos 8-3 Las Garzas, 40880 Ixtapa Zihuatanejo, Gro.</p>
                 <a href="https://maps.app.goo.gl/WMm1gSEpt9dAxR2E8" target="_blank" class="mapa-btn" data-aos="fade-up">
                     Ver mapa
                 </a>
@@ -96,13 +111,12 @@
         </div>
 
         <div class="evento" data-aos="fade up">
-            <div class="icono"><img src="images/ubicacion.png" width="10%" data-aos="fade-up"></div>
-            <div class="titulo" data-aos="fade-up">Destino</div>
+            <div class="icono"><img src="images/ubicacion.png" width="5%" data-aos="fade-up"></div>
+            <div class="subtitulo" data-aos="fade-up"><strong>Destino</strong></div>
             <div class="detalle" data-aos="fade-up">
-                <p data-aos="fade-up"><strong>Hora: 6:00 pm</strong></p>
-                <p data-aos="fade-up"><strong>Recepción</strong></p>
+                <p data-aos="fade-up">Hora: 6:00 pm</p>
+                <p data-aos="fade-up">Recepción</p>
                 <p data-aos="fade-up">“Hotel Fontán Ixtapa”</p>
-                <p data-aos="fade-up">Blvd. Paseo Ixtapa S/N, Fontán, 40880 Ixtapa Zihuatanejo, Gro.</p>
                 <a href="https://maps.app.goo.gl/uYucPyPCwUo9tYMw6" target="_blank" class="mapa-btn" data-aos="fade-up">Ver mapa</a>
             </div>
         </div>
@@ -111,40 +125,38 @@
     <!--Vestimenta-->
     <div class="container" data-aos="fade up">
         <br><br>
-        <div class="icon"></div>
-        <div class="title" data-aos="fade-up">DRESS CODE</div>
+        <div class="subtitulo" data-aos="fade-up">DRESS CODE</div>
         
         <div class="dress-code" data-aos="fade-up">
             <div class="section" data-aos="fade-up">
-                <h2 class="title" data-aos="fade-up">MUJERES</h2>
-                <p data-aos="fade-up">Vestido</p>
-                <p data-aos="fade-up">Colores de verano entero o floreado (NO colores blancos,beige, rojo o similares)</p>
+                <h2 class="subtitulo2" data-aos="fade-up">MUJERES</h2>
+                <p class="texto" data-aos="fade-up">Vestido</p>
+                <p class="texto" data-aos="fade-up">Colores de verano entero o floreado (NO colores blancos,beige, rojo o similares)</p>
             </div>
             <div class="section" data-aos="fade-up">
-                <h2 class="title" data-aos="fade-up">HOMBRES</h2>
-                <p data-aos="fade-up">Formal</p>
-                <p data-aos="fade-up">Pantalon de vestir & camisa</p>
+                <h2 class="subtitulo2" data-aos="fade-up">HOMBRES</h2>
+                <p class="texto" data-aos="fade-up">Formal</p>
+                <p class="texto" data-aos="fade-up">Pantalon de vestir & camisa</p>
             </div>
         </div>
-            <img src="images/dreescode.jpg" width="200px" data-aos="fade-up">
+            <img src="images/dreescode.jpg" width="270px" data-aos="fade-up">
         <br><br>
     </div>
     
-    <!--Mesa de regalos-->
-    <div class="container" data-aos="fade up">
+     <!--Mesa de regalos-->
+     <div class="container" data-aos="fade up">
         <br><br>
-        <div class="icon"></div>
-        <div class="title2" data-aos="fade-up">SUGERENCIA DE REGALOS</div>
-        <div data-aos="fade-up">Si deseas darnos un presente, tenemos una lista de regalos</div><br><br>
+        <div class="subtitulo" data-aos="fade-up">SUGERENCIA DE REGALOS</div><br>
+        <div class="texto" data-aos="fade-up">Si deseas darnos un presente, tenemos una lista de regalos</div><br><br>
         
-        <div style="margin-bottom: 20px;">
+        <div>
             <img src="images/liverpool.png" alt="Liverpool" width="170px" data-aos="fade-up">
-            <h2 class="evento-mesa" data-aos="fade-up">Evento: 51633199</h2>
+            <h2 class="texto" data-aos="fade-up">Evento: 51633199</h2>
             <a data-aos="fade-up" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51633199" target="_blank" class="mapa-btn">Consultar Mesa</a>
         </div><br><br>
 
         <div>
-            <center> <img data-aos="fade-up" src="images/amazon.png" alt="Amazon" width="120px"></center>
+            <center><img data-aos="fade-up" src="images/amazon.png" alt="Amazon" width="120px"></center>
             <a data-aos="fade-up" href="https://www.amazon.com.mx/wedding/registry/12OW1IO1117A9" target="_blank" class="mapa-btn">Consultar Mesa</a><br><br>
         </div><br><br>
 
@@ -155,7 +167,8 @@
     </div>
 
     <div class="container2" data-aos="fade-up">
-        <iframe src="html/carousel.html" frameborder="0" width="100%" height="450px"></iframe>
+        <iframe src="html/carousel.html" frameborder="0" width="100%" height="400px"></iframe>
+        <div class="textoImagen2" data-aos="fade-up">¡Te esperamos!</div>
     </div>
 
     <script>
@@ -184,8 +197,6 @@
         setInterval(actualizarContador, 1000);
         actualizarContador();
     </script>
-
-
     <script src="js/functions.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
