@@ -62,7 +62,7 @@ body {
     width: 225px;
     position: absolute;
     opacity: 30%;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -70,7 +70,7 @@ body {
 .image2 {
     width: 225px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -78,14 +78,14 @@ body {
 .image3 {
     width: 285px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .central {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #a47333;
@@ -95,7 +95,7 @@ body {
 
 .plane {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #a47333;
