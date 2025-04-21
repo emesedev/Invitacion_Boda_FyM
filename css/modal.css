@@ -1,0 +1,36 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.rsvp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.mod {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
