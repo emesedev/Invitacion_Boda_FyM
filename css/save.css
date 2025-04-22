@@ -10,9 +10,9 @@
 }
 
 .image4 {
-    width: 275px;
+    width: 250px;
     position: relative;
-    top: 70%;
-    left: 63%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }

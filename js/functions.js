@@ -22,3 +22,9 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+document.getElementById("envio").addEventListener("submit", function () {
+    setTimeout(function () {
+        location.reload();
+    }, 1000);
+});

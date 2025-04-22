@@ -173,16 +173,16 @@
     </div>
 
     <!--Save-->
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <br><br><br>
-        <div class="titulo">¡NOS CASAMOS!</div>
-        <div class="texto">Y QUEREMOS QUE SEAS PARTE DE ESTE VIAJE</div><br><br>
+        <div class="titulo" data-aos="fade-up">¡NOS CASAMOS!</div>
+        <div class="texto" data-aos="fade-up">Y QUEREMOS QUE SEAS PARTE DE ESTE VIAJE</div><br><br>
 
-        <div class="stamp2">
+        <div class="stamp2" data-aos="fade-up">
             <img src="images/save.png" class="image4">
         </div><br><br><br>
-        <h1>¡CHECK IN!</h1>
-        <div>
+        <h1 data-aos="fade-up">¡CHECK IN!</h1>
+        <div data-aos="fade-up">
             <p class="texto">CONFIRMA TU ASISTENCIA Y BIENVENIDO A BORDO</p>
             <a type="button" class="mapa-btn" onclick="openModal()">Confirmar</a>
         </div><br>
@@ -193,35 +193,28 @@
         <div class="textoImagen2" data-aos="fade-up">¡Te esperamos!</div>
     </div>
 
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" style="display: none;" data-aos="fade-up">
         <div class="modal-content">
             <div class="rsvp-container">
                 <h3 class="texto">Confirma tu asistencia</h3>
                 <form id="envio" action="https://formsubmit.co/santos_rg4l@hotmail.com" method="POST">
-                    <input class="mod form-control" type="text" name="nombre" placeholder="Nombre" required/><br>
-                    <select class="mod form-control" name="asistencia" required>
+                    <input class="mod form-control" type="text" name="Nombre" placeholder="Nombre" required/><br>
+                    <select class="mod form-control" name="Asistencia" required>
                         <option value="">¿Asistirás?</option>
                         <option value="sí">Sí</option>
                         <option value="no">No</option>
                     </select><br>
-                    <select class="mod form-control" name="asistencia" required>
+                    <select class="mod form-control" name="Hospedaje" required>
                         <option value="">¿Te hospedarás en el hotel?</option>
                         <option value="sí">Si</option>
                         <option value="no">No</option>
                     </select><br>
-                    <button class="mapa-btn" type="submit">Confirmar</button>
+                    <a class="mapa-btn" type="submit">Confirmar</a>
                 </form>
             </div>
         </div>
     </div>
 
-    <script>
-        document.getElementById("envio").addEventListener("submit", function () {
-          setTimeout(function () {
-            location.reload();
-          }, 1000);
-        });
-    </script>
     <script>
         function actualizarContador() {
             const fechaObjetivo = new Date("2025-12-05T00:00:00").getTime(); // Cambia la fecha aquí
