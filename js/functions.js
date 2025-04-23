@@ -8,14 +8,6 @@ function reproducirAudio() {
     }
 }
 
-function openModal() {
-    document.getElementById('myModal').style.display = 'block';
-}
-
-function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
-}
-
 window.onclick = function (event) {
     const modal = document.getElementById('myModal');
     if (event.target == modal) {
@@ -25,6 +17,6 @@ window.onclick = function (event) {
 
 document.getElementById("envio").addEventListener("submit", function () {
     setTimeout(function () {
-        location.reload();
+        location.href = "index.html";
     }, 1000);
 });

@@ -184,35 +184,38 @@
         <h1 data-aos="fade-up">¡CHECK IN!</h1>
         <div data-aos="fade-up">
             <p class="texto">CONFIRMA TU ASISTENCIA Y BIENVENIDO A BORDO</p>
-            <a type="button" class="mapa-btn" onclick="openModal()">Confirmar</a>
-        </div><br>
+        </div>
+        <input type="checkbox" id="modal-toggle">
+        <label for="modal-toggle" class="mapa-btn" data-aos="fade-up">Confirmar</label>
+    
+        <div class="modal">
+            <div class="modal-content">
+                <label for="modal-toggle" class="close">&times;</label>
+                <div class="rsvp-container">
+                    <h3 class="texto">Confirma tu asistencia</h3>
+                    <form id="envio" action="https://formsubmit.co/santos_rg4l@hotmail.com" method="POST">
+                        <input class="mod form-control" type="text" name="Nombre" placeholder="Nombre" required/><br>
+                        <select class="mod form-control" name="Asistencia" required>
+                            <option value="">¿Asistirás?</option>
+                            <option value="sí">Sí</option>
+                            <option value="no">No</option>
+                        </select><br>
+                        <select class="mod form-control" name="Hospedaje" required>
+                            <option value="">¿Te hospedarás en el hotel?</option>
+                            <option value="sí">Si</option>
+                            <option value="no">No</option>
+                        </select><br>
+                        <button class="mapa-btn" type="submit">Confirmar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="container2" data-aos="fade-up">
+        <br>
         <iframe src="html/carousel.html" frameborder="0" width="100%" height="400px"></iframe>
         <div class="textoImagen2" data-aos="fade-up">¡Te esperamos!</div>
-    </div>
-
-    <div id="myModal" class="modal" style="display: none;" data-aos="fade-up">
-        <div class="modal-content">
-            <div class="rsvp-container">
-                <h3 class="texto">Confirma tu asistencia</h3>
-                <form id="envio" action="https://formsubmit.co/santos_rg4l@hotmail.com" method="POST">
-                    <input class="mod form-control" type="text" name="Nombre" placeholder="Nombre" required/><br>
-                    <select class="mod form-control" name="Asistencia" required>
-                        <option value="">¿Asistirás?</option>
-                        <option value="sí">Sí</option>
-                        <option value="no">No</option>
-                    </select><br>
-                    <select class="mod form-control" name="Hospedaje" required>
-                        <option value="">¿Te hospedarás en el hotel?</option>
-                        <option value="sí">Si</option>
-                        <option value="no">No</option>
-                    </select><br>
-                    <button class="mapa-btn" type="submit">Confirmar</button>
-                </form>
-            </div>
-        </div>
     </div>
 
     <script>
