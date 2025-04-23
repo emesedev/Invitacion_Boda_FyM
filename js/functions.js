@@ -49,3 +49,20 @@ document.getElementById("envio").addEventListener("submit", function (e) {
         console.error(error);
     });
 });
+
+function enviarFormulario() {
+    setTimeout(() => {
+        const popup = document.getElementById("popup-gracias");
+        popup.style.display = "block";
+
+        document.getElementById("modal-toggle").checked = false;
+
+        document.getElementById("envio").reset();
+
+        setTimeout(() => {
+            popup.style.display = "none";
+        }, 3000);
+    }, 500);
+
+    return true;
+}
