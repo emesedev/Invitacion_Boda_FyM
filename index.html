@@ -220,6 +220,22 @@
         <div class="textoImagen2" data-aos="fade-up">¡Te esperamos!</div>
     </div>
 
+    <div id="popup-gracias" style="
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    text-align: center;
+    ">
+    <h3>¡Gracias por confirmar tu asistencia!</h3>
+    </div>
+
     <script>
         function actualizarContador() {
             const fechaObjetivo = new Date("2025-12-05T00:00:00").getTime(); // Cambia la fecha aquí
@@ -253,7 +269,7 @@
         AOS.init({
             duration: 1000
         });
-    </script>
+    </script>    
 </body>
 
 </html>
