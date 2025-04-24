@@ -41,41 +41,7 @@ body {
     flex-direction: column;
 }
 
-.stamp h2,
-.stamp p {
-    margin: 0;
-    color: #a47333;
-}
-
-.stamp h2 {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.stamp p {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #a47333;
-}
-
 .image {
-    width: 225px;
-    position: absolute;
-    opacity: 30%;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.image2 {
-    width: 295px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.image3 {
     width: 325px;
     position: absolute;
     top: 60%;
@@ -83,30 +49,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.central {
+.image2 {
+    width: 235px;
     position: absolute;
+    opacity: 30%;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #a47333;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.plane {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #a47333;
-    font-size: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.plane img {
-    width: 100px;
 }
 
 .texto {
