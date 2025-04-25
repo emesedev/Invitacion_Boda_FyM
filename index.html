@@ -28,13 +28,13 @@
         <div class="subtitulo">A NUESTRA BODA</div>
         <div class="espacio2"></div>
 
-        <img src="images/1.png" alt="Haz clic para reproducir" class="image" onclick="reproducirAudio()">
+        <img src="images/1.png" alt="Haz clic para reproducir" class="image" >
         <audio id="audio" src="html/Congratulations.mp3"></audio>
-        <img src="images/world.gif" alt="" class="image2" onclick="reproducirAudio()">
+        <img src="images/world.gif" alt="" onclick="reproducirAudio()" class="image2">
         
         <div class="texto">
             <h1>FÁTIMA & MOISÉS</h1>
-            <p style="text-transform: uppercase;">Presiona el avión para escuchar nuestra canción</p>
+            <p class="textoalt">Presiona el avión para escuchar nuestra canción</p>
         </div>
         <div class="icon"><img src="images/carta.png" width="10%" alt=""></div><br>
     </div>
@@ -47,7 +47,7 @@
 
     <!--Padres-->
     <div class="container" data-aos="fade up">
-        <br><br>
+        <div class="espacio"></div>
         <div class="subtitulo2" data-aos="fade-up">CON LA BENDICIÓN DE DIOS Y DE NUESTROS PADRES</div><br>
         <div class="textoalt" data-aos="fade-up">PADRES DE LA NOVIA</div>
         <div class="image-container" data-aos="fade-up">
@@ -69,8 +69,8 @@
             <p>JOSÉ LUIS SANTOS RANGEL</p>
         </div><br>
 
-        <div class="texto">
-            <p style="text-transform: uppercase;">¡ Estamos listos para compartir con ustedes !</p>
+        <div class="textoalt">
+            <p>¡ Estamos listos para compartir con ustedes !</p>
         </div><br>
     </div>
 
@@ -81,25 +81,26 @@
 
     <!--Conteo-->
     <div class="container" data-aos="fade up">
-        <br><br>
+        <div class="espacio"></div>
         <h2 class="subtitulo" data-aos="fade-up">Prepárate y acompañanos a celebrar</h2><br>
         <img src="images/pase.png" width="90%" data-aos="fade-up"><br><br>
 
-        <p class="texto" data-aos="fade-up">Cuenta regresiva para el abordaje</p>
+        <p class="textoalt" data-aos="fade-up">Cuenta regresiva para el abordaje</p>
         <div id="contador" class="contador" data-aos="fade-up">00 : 00 : 00 : 00</div>
         <div>
             <span class="unidad" data-aos="fade-up">DÍAS</span>
             <span class="unidad" data-aos="fade-up">HORAS</span>
             <span class="unidad" data-aos="fade-up">MINUTOS</span>
             <span class="unidad" data-aos="fade-up">SEGUNDOS</span>
-        </div><br><br>
+        </div>
+        <div class="espacio"></div>
     </div>
 
     <!--Escalas-->
     <div class="container" data-aos="fade up"><br>
         <h1 class="subtitulo" data-aos="fade-up">Itinerario de escalas</h1>
         <div class="evento" data-aos="fade-up">
-            <div class="icon"><img src="images/ubicacion.png" width=5%" data-aos="fade-up"></div>
+            <div class="icon"><img src="images/ubicacion.png" width=7%" data-aos="fade-up"></div>
             <div class="subtitulo" data-aos="fade-up"><strong>Escala</strong></div>
             <div class="detalle" data-aos="fade-up">
                 <p data-aos="fade-up">Hora: 1:00 pm</p>
@@ -110,7 +111,7 @@
         </div>
 
         <div class="evento" data-aos="fade up">
-            <div class="icono"><img src="images/ubicacion.png" width="5%" data-aos="fade-up"></div>
+            <div class="icono"><img src="images/ubicacion.png" width="7%" data-aos="fade-up"></div>
             <div class="subtitulo" data-aos="fade-up"><strong>Destino</strong></div>
             <div class="detalle" data-aos="fade-up">
                 <p data-aos="fade-up">Hora: 6:00 pm</p>
@@ -128,15 +129,15 @@
 
         <div class="dress-code" data-aos="fade-up">
             <div class="section" data-aos="fade-up">
-                <h2 class="subtitulo2" data-aos="fade-up">MUJERES</h2>
+                <h2 class="subtitulo3" data-aos="fade-up">MUJERES</h2>
                 <p class="texto" data-aos="fade-up">Vestido</p>
-                <p class="texto" data-aos="fade-up">Colores de verano entero o floreado (NO colores blancos,beige, rojo
+                <p class="textoalt2" data-aos="fade-up">Colores de verano entero o floreado (NO colores blanco, perla, beige, azul
                     o similares)</p>
             </div>
             <div class="section" data-aos="fade-up">
-                <h2 class="subtitulo2" data-aos="fade-up">HOMBRES</h2>
+                <h2 class="subtitulo3" data-aos="fade-up">HOMBRES</h2>
                 <p class="texto" data-aos="fade-up">Formal</p>
-                <p class="texto" data-aos="fade-up">Pantalon de vestir & camisa</p>
+                <p class="textoalt2" data-aos="fade-up">Pantalon de vestir & camisa</p>
             </div>
         </div>
         <img src="images/dreescode.jpg" width="270px" data-aos="fade-up">
@@ -145,7 +146,7 @@
 
     <!--Mesa de regalos-->
     <div class="container" data-aos="fade up">
-        <br><br>
+        <div class="espacio"></div>
         <div class="subtitulo" data-aos="fade-up">SUGERENCIA DE REGALOS</div><br>
         <div class="texto" data-aos="fade-up">Si deseas darnos un presente, tenemos una lista de regalos</div><br><br>
 
@@ -153,33 +154,37 @@
             <img src="images/liverpool.png" alt="Liverpool" width="170px" data-aos="fade-up">
             <h2 class="texto" data-aos="fade-up">Evento: 51633199</h2>
             <a data-aos="fade-up" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51633199" target="_blank" class="mapa-btn">Consultar Mesa</a>
-        </div><br><br>
+        </div>
+        <div class="espacio"></div>
 
         <div>
             <center><img data-aos="fade-up" src="images/amazon.png" alt="Amazon" width="120px"></center>
             <a data-aos="fade-up" href="https://www.amazon.com.mx/wedding/registry/12OW1IO1117A9" target="_blank" class="mapa-btn">Consultar Mesa</a><br><br>
-        </div><br><br>
+        </div>
+        <div class="espacio"></div>
 
         <div class="footer-text" data-aos="fade-up">
             Cada invitado ha sido considerado con cariño, por lo que cada invitación es personal y válida únicamente
             para el número de pases asignado. <br>
             Agradecemos su comprensión y el respeto a esta indicación.
-        </div><br><br>
+        </div>
+        <div class="espacio"></div>
     </div>
 
     <!--Save-->
     <div class="container" data-aos="fade-up">
-        <br><br><br>
+        <div class="espacio"></div>
         <div class="titulo" data-aos="fade-up">¡NOS CASAMOS!</div>
-        <div class="texto" data-aos="fade-up">Y QUEREMOS QUE SEAS PARTE DE ESTE VIAJE</div><br><br>
+        <div class="textoalt" data-aos="fade-up">Y QUEREMOS QUE SEAS PARTE DE ESTE VIAJE</div><br><br>
+        <div class="espacio3"></div>
 
-        <div class="stamp2" data-aos="fade-up">
-            <img src="images/save.png" class="image4">
-        </div><br><br><br>
+        <img src="images/save.png" class="image3">
+
         <h1 data-aos="fade-up">¡CHECK IN!</h1>
         <div data-aos="fade-up">
-            <p class="texto">CONFIRMA TU ASISTENCIA Y BIENVENIDO A BORDO</p>
+            <p class="textoalt">CONFIRMA TU ASISTENCIA Y BIENVENIDO A BORDO</p>
         </div>
+
         <input type="checkbox" id="modal-toggle">
         <label for="modal-toggle" class="mapa-btn">Confirmar</label>
     
@@ -206,7 +211,8 @@
                     </form>
                 </div>
             </div>
-        </div><br><br>
+        </div>
+        <div class="espacio"></div>
     </div>
 
     <iframe name="hiddenFrame" style="display:none;"></iframe>
