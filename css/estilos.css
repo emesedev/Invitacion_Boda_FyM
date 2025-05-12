@@ -98,8 +98,9 @@ body {
 
 .textoalt2 {
     font-size: 17px;
-    color: #a47333;
+    color: #000;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .icon {
